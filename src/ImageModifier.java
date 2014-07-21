@@ -37,6 +37,12 @@ public class ImageModifier {
 			builder.append("}\"");
 			//String srcString ="th:src=\"@{~/resources/images/sidebar-thumbnail.png}\";
 			System.out.println(builder.toString());
+			StringBuilder newHtmlBuilder = new StringBuilder();
+			newHtmlBuilder.append(str.substring(0, endIndex + 1));
+			newHtmlBuilder.append(" " + builder.toString());
+			newHtmlBuilder.append(str.substring(endIndex + 1));
+			newStr = newHtmlBuilder.toString();
+			str = newStr;
 			//System.out.println("start: " + index + " end: " + endIndex);
 			System.out.println(str.substring(urlStartIndex, endIndex));
 		}
@@ -59,6 +65,6 @@ public class ImageModifier {
 		}
 		System.out.println("Course specifi images hit: " + courseImageLocs.size());
 		System.out.println("Parent folder images hit: " + parentImageLocs.size());
-		//System.out.println(newStr);
+		System.out.println(newStr);
 	}
 }
