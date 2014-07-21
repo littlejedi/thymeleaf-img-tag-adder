@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html>
+
+<head th:include="fragments/courses/courseMakeHeader">
+</head>
+
+<body>
+    <div id="main" class="wide">
+        <div th:replace="fragments/header :: navigation_header_fragment"></div>
+
+        <div id="top-image" class="top-image3">
+            <div class="container">
+                <div id="top-image-caption">
+                    <h2>实验 &amp; 制作</h2>
+                </div>
+            </div>
+        </div>
+
+        <div id="breadcrumbs">
+            <div class="container">
+                <div class="row" style="position:relative">
+                    <div class="span8" style="width:auto">
+                        <ul class="breadcrumb">
+                            <li><a href="#">首页</a><span class="divider">/</span>
+                            </li>
+                            <li>
+                                <p>发光的单车安全衫</p><span class="divider">/</span>
+                            </li>
+                            <li>
+                                <p>实验 &amp; 制作</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="inner-searcher clearfix">
+                        <i class="icon-search search-box-icon"></i>
+                        <input type="text" name="search" class="search-box" value="" placeholder="搜索课程..." />
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="container">
+                <div class="row">
+                    <div class="span9">
+
+
+                        <div class="big-image thumbnail">
+                            <div class="banner">
+                                <img src="images/make/32.jpg" />
+                                <div class="inner-banner">发光的单车安全衫</div>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="post-info clearfix">
+                            <div class="post-date">
+                                <i class="icon-calendar"></i>
+                                <p>2014年6月2日</p>
+                            </div>
+
+                            <div class="post-author-name">
+                                <i class="icon-user"></i>
+                                <a href="#">张翠珊</a>
+                            </div>
+
+                            <div class="post-category">
+                                <i class="icon-pencil"></i>
+                                <a href="#">学习中</a>
+                            </div>
+
+                            <div class="post-comments">
+                                <i class="icon-comments"></i>
+                                <a href="#">评论 (5)</a>
+                            </div>
+
+                            <div class="post-comments">
+                                <i class="icon-heart"></i>
+                                <a href="#">收藏 (3)</a>
+                            </div>
+                        </div>
+
+
+                        <img src="images/make/lead.jpg">              
+
+                        <ul class="chats clearfix">
+                            <li class="in clearfix">
+                                <img src="../../images/avatar/A01.jpg" class="avatar">
+                                <div class="message" id="single_3">
+                                    <span class="arrow"></span>	
+                                    <span class="body">
+                            安全衫有好多的功能要实现哦~
+        							</span>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="chats clearfix">
+                            <li class="out clearfix">
+                                <img src="../../images/avatar/B04.jpg" class="avatar">
+                                <div class="message" id="sp1">
+                                    <span class="arrow"></span> 
+                                    <span class="body">
+                            这确实是一个比较复杂的大项目了。不如我们先从如何实现车速显示入手，开始设计吧。
+                            </span>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div style="width: 100%;background:#eee;padding:0" class="post-info clearfix">
+                            <h3 style="margin:0;font-size:1.5em;"><i style="color:white;" class="icon-book post-title-icon"></i>思维元素</h3>
+                        </div>
+
+                        <div class="module_variable clearfix">
+                            <div class="topic">功能拆解</div>
+                            <div class="content-icon clearfix">
+                                <div>
+                                    <div>
+                                        <img src="images/icons/01.png" />
+                                    </div>
+                                    <div class="i_info">发光显示数字</div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <img src="images/icons/02.png" />
+                                    </div>
+                                    <div class="i_info">单车车轮周长测量</div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <img src="images/icons/03.png" />
+                                    </div>
+                                    <div class="i_info">单车车轮转动圈数实时测量</div>
+                                </div>  
+                                <div>
+                                    <div>
+                                        <img src="images/icons/04.png" />
+                                    </div>
+                                    <div class="i_info">计算车速信息</div>
+                                </div>                           
+                            </div>
+                        </div>
+                        <div class="module_variable clearfix table">
+                            <div class="topic">目标功能</div>
+                            <div class="content-icon clearfix" style="min-height:185px">
+                                <div id="center-icon">
+                                    <div>
+                                        <img src="images/icons/05.png" />
+                                    </div>
+                                    <div class="i_info">发光灯显示实时车速</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="chats clearfix">
+                            <li class="in clearfix">
+                                <img src="../../images/avatar/A03.jpg" class="avatar">
+                                <div class="message" id="single_3">
+                                    <span class="arrow"></span> 
+                                    <span class="body">
+                        整理出来就清楚需要开发哪些功能模块了。
+                                    </span>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="chats clearfix">
+                            <li class="out clearfix">
+                                <img src="../../images/avatar/B05.jpg" class="avatar">
+                                <div class="message" id="sp1">
+                                    <span class="arrow"></span> 
+                                    <span class="body">
+                            那下面我们再来思考一下这些元素彼此间应如何协调工作。
+                            </span>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                   
+                      
+                        <div style="width: 100%;background:#eee;padding:0" class="post-info clearfix">
+                            <h3 style="margin:0;font-size:1.5em;"><i style="color:white;" class="icon-book post-title-icon"></i>方案设计</h3>
+                        </div>
+
+                        <div class="chats portlet-body clearfix">
+                            <div data-rail-visible1="1" data-always-visible="1" data-height="435px" class="scroller">
+                                <ul class="chats clearfix" style="margin-bottom:30px">
+                                     <li class="in">
+	                                     <img src="../../images/avatar/A03.jpg" class="avatar">
+	                                     <div class="message" id="single_3">
+		                                     <span class="arrow"></span>	
+		                                     <span class="body">
+			                                     这么多的可能因变量，那到底是什么原因导致的电阻值变化呢？
+			                                 </span>
+			                             </div>
+			                         </li>
+			                         <li class="out">
+				                         <img src="../../images/avatar/B05.jpg" class="avatar">
+				                         <div class="message" id="sp1">
+					                     	<span class="arrow"></span>	
+					                     	<span class="body">
+						                    	 别着急，我们不妨先来观测一下，不同的形变情况，对导电墨水的电阻值的影响规律。但用手肯定不是很好的选择，让我们先来设计一下实验方案吧~
+						                	 </span>
+						                 </div>
+						             </li>
+                                 </ul>
+                            </div>
+                        </div>
+
+                        <div class="row clearfix">
+                            <div class="span9">
+                                <div style="margin-bottom:12px" class="member">
+                                    <div class="member-photo thumbnail">
+                                        <img src="images/make/think1.jpg" style="border:1px solid #dedede">
+
+                                    </div>
+
+                                    <div class="member-info">
+                                        <div class="member-role">
+                                            <p class="member-name"><i class="atarasii_maru">1</i>功能模块设想</p>
+
+                                        </div>
+
+                                        <div class="member-bio">
+                                            <p>通过传感器获得自行车的车速信息，发送给安置在安全衫上的发光数显模块，实现实时显示车速信息。
+                                            </p>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                         <div class="row clearfix">
+                            <div class="span9">
+                                <div style="margin-bottom:12px" class="member">
+                                    <div class="member-photo thumbnail">
+                                        <img src="images/make/think2.jpg" style="border:1px solid #dedede">
+
+                                    </div>
+
+                                    <div class="member-info">
+                                        <div class="member-role">
+                                            <p class="member-name"><i class="atarasii_maru">2</i>那么如何获得车速信息呢？</p>
+
+                                        </div>
+
+                                        <div class="member-bio">
+                                            <p>我们可以通过GPS技术获得车的位置信息，再除以时间，即可得到时速信息；或者我们如果能知道车轮每圈转动的时间，车速=车轮周长/车轮每转一圈的时间，也就可以获得时速信息啦。
+                                            </p>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="chats portlet-body clearfix">
+                            <div data-rail-visible1="1" data-always-visible="1" class="scroller">
+                                <ul class="chats">
+                                    <li class="out">
+                                        <img src="../../images/avatar/A04.jpg" class="avatar">
+                                        <div class="message">
+                                            <span class="arrow"></span>
+                                            <span class="body">
+	                                       太棒了！整理之后思路清晰~开始动手做咯！
+	                                        </span>
+                                        </div>
+                                        <div style="clear:both"></div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="members-wrapper span9">
+
+                            <div style="width: 100%;background:#eee;padding:0" class="post-info clearfix">
+                                <h3 style="margin:0;font-size:1.5em;"><i style="color:white;" class="icon-book post-title-icon"></i>动手制作</h3>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="row clearfix">
+                                <div class="span4">
+                                    <div class="member" style="margin-bottom:12px">
+                                        <div class="member-photo thumbnail">
+                                            <img src="images/make/01.jpg">
+
+                                        </div>
+
+                                        <div class="member-info">
+                                            <div class="member-role">
+                                                <p class="member-name"><i class="atarasii_maru">1</i>实验器材</p>
+
+                                            </div>
+
+                                            <div class="member-bio">
+                                                <p>
+                                                </p>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                    
+
+                            <tr>
+                                <td colspan="3">
+                                    <div class="pricing-table-content">
+                                        <div class="table-row tbg clearfix" style="text-align:center;margin:12px 0;">
+                                            <h4 style="color:#000">第一部分：安全衫加工</h4>
+                                            首先我们在安全衫上确定好我们要显示数字的位置
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+
+                            <div class="clearfix"></div>
+                            <div class="row clearfix">
+                                <div class="span4">
+                                    <div class="member" style="margin-bottom:12px">
+                                        <div class="member-photo thumbnail">
+                                            <img src="images/make/02.jpg">
+
+                                        </div>
+
+                                        <div class="member-info">
+                                            <div class="member-role">
+                                                <p class="member-name"><i class="atarasii_maru">2</i>数字定位</p>
+
+                                            </div>
+
+                                            <div class="member-bio">
+                                                <p>用胶带贴出两个你喜欢的8字形状
+                                                </p>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="span4">
+                                    <div class="member" style="margin-bottom:12px">
+                                        <div class="member-photo thumbnail">
+                                            <img src="images/make/03.jpg">
+
+                                        </div>
+
+                                        <div class="member-info">
+                                            <div class="member-role">
+                                                <p class="member-name"><i class="atarasii_maru">3</i>数字命名</p>
+
+                                            </div>
+
+                                            <div class="member-bio">
+                                                <p>为便于说明，我们将组成两个数字8的14跟线进行命名</p>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                             </div>
+
+                            <tr>
+                                <td colspan="3">
+                                    <div class="pricing-table-content">
+                                        <div class="table-row tbg clearfix" style="text-align:center;margin:12px 0;">
+                                            <h4 style="color:#000">第二部分：EL电线数字展示</h4>
+                                            我们将EL电线套件中的电线部分安装在放光安全衫上
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <div class="clearfix"></div>
+                            <div class="row clearfix">
+                                <div class="span4">
+                                    <div class="member" style="margin-bottom:12px">
+                                        <div class="member-photo thumbnail">
+                                            <img src="images/make/04.jpg">
+
+                                        </div>
+
+                                        <div class="member-info">
+                                            <div class="member-role">
+                                                <p class="member-name"><i class="atarasii_maru">4</i>将A与B焊接</p>
+
+                                            </div>
+
+                                            <div class="member-bio">
+                                                <p>剥开EL灯带和接插件的橡胶保护套，将两者正负极对应焊接</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span4">
+                                    <div class="member" style="margin-bottom:12px">
+                                        <div class="member-photo thumbnail">
+                                            <img src="images/make/05.jpg">
+
+                                        </div>
+
+                                        <div class="member-info">
+                                            <div class="member-role">
+                                                <p class="member-name"><i class="atarasii_maru">5</i>确定EL电线长度</p>
+
+                                            </div>
+
+                                            <div class="member-bio">
+                                                <p>将焊接好的EL电线一端对齐收纳口袋的底部，一端对齐该电线欲现实的数字末端</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span4">
+                                    <div class="member" style="margin-bottom:12px">
+                                        <div class="member-photo thumbnail">
+                                            <img src="images/make/06.jpg">
+
+                                        </div>
+
+                                        <div class="member-info">
+                                            <div class="member-role">
+                                                <p class="member-name"><i class="atarasii_maru">6</i>用剪刀剪断EL灯带</p>
+
+                                            </div>
+
+                                            <div class="member-bio">
+                                                <p>此时EL灯带一端是接插件，一端是断开的</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span4">
+                                    <div class="member" style="margin-bottom:12px">
+                                        <div class="member-photo thumbnail">
+                                            <img src="images/make/07.jpg">
+
+                                        </div>
+
+                                        <div class="member-info">
+                                            <div class="member-role">
+                                                <p class="member-name"><i class="atarasii_maru">7</i>将收纳口袋划出一个洞</p>
+
+                                            </div>
+
+                                            <div class="member-bio">
+                                                <p>将打开收纳口袋的袋盖，使用刻刀在如图位置划出5厘米的裂缝</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span4">
+                                    <div class="member" style="margin-bottom:12px">
+                                        <div class="member-photo thumbnail">
+                                            <img src="images/make/08.jpg">
+
+                                        </div>
+
+                                        <div class="member-info">
+                                            <div class="member-role">
+                                                <p class="member-name"><i class="atarasii_maru">8</i>无效部分遮光</p>
+
+                                            </div>
+
+                                            <div class="member-bio">
+                                                <p>用不透光的胶带（如电工胶布）将不用于发光的EL电线缠住，只保留需要现实数字的部分</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span4">
+                                    <div class="member" style="margin-bottom:30px">
+                                        <div class="member-photo thumbnail">
+                                            <img src="images/make/09.jpg">
+
+                                        </div>
+
+                                        <div class="member-info">
+                                            <div class="member-role">
+                                                <p class="member-name"><i class="atarasii_maru">9</i>入线口切割</p>
+
+                                            </div>
+
+                                            <div class="member-bio">
+                                                <p>使用刻刀将安全衫的对应EL电线的入线口处切割出一个小洞</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span4">
+                                    <div class="member" style="margin-bottom:12px">
+                                        <div class="member-photo thumbnail">
+                                            <img src="images/make/10.jpg">
+
+                                        </div>
+
+                                        <div class="member-info">
+                                            <div class="member-role">
+                                                <p class="member-name"><i class="atarasii_maru">10</i>穿线</p>
+
+                                            </div>
+
+                                            <div class="member-bio">
+                                                <p>将EL电线分别从收纳口袋洞与刚切割的入线口穿出，接插件端对应收纳口袋洞</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span4">
+                                    <div class="member" style="margin-bottom:30px">
+                                        <div class="member-photo thumbnail">
+                                            <img src="images/make/11.jpg">
+
+                                        </div>
+
+                                        <div class="member-info">
+                                            <div class="member-role">
+                                                <p class="member-name"><i class="atarasii_maru">11</i>EL电线固顶</p>
+
+                                            </div>
+
+                                            <div class="member-bio">
+                                                <p>使用针线将EL电线固定</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span4">
+                                    <div class="member" style="margin-bottom:12px">
+                                        <div class="member-photo thumbnail">
+                                            <img src="images/make/12.jpg">
+
+                                        </div>
+
+                                        <div class="member-info">
+                                            <div class="member-role">
+                                                <p class="member-name"><i class="atarasii_maru">12</i>EL电线命名标记</p>
+
+                                            </div>
+
+                                            <div class="member-bio">
+                                                <p>参考03步骤说明，将EL电线的接口端用贴纸贴上标签</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span4">
+                                    <div class="member" style="margin-bottom:12px">
+                                        <div class="member-photo thumbnail">
+                                            <img src="images/make/13.jpg">
+
+                                        </div>
+
+                                        <div class="member-info">
+                                            <div class="member-role">
+                                                <p class="member-name"><i class="atarasii_maru">13</i>EL电线数字摆放环节完成</p>
+
+                                            </div>
+
+                                            <div class="member-bio">
+                                                <p>重复04~12步骤直指完成如上完整效果（注意末端电线按照数字分组摆放）</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            
+                            <tr>
+                                <td colspan="3">
+                                    <div class="pricing-table-content">
+                                        <div class="table-row tbg clearfix" style="text-align:center;margin:12px 0;">
+                                            <h4 style="color:#000">第三部分 - EL数字控制板的链接</h4>
+                                            将已安装好的EL电线与EL数字控制板相连接
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <div class="clearfix"></div>
+                            <div class="row clearfix">
+                                <div class="span4">
+                                    <div class="member" style="margin-bottom:12px">
+                                        <div class="member-photo thumbnail">
+                                            <img src="images/make/14.jpg">
+
+                                        </div>
+
+                                        <div class="member-info">
+                                            <div class="member-role">
+                                                <p class="member-name"><i class="atarasii_maru">14</i>EL电线接口对接</p>
+
+                                            </div>
+
+                                            <div class="member-bio">
+                                                <p>将EL灯带接口与EL控制板按如图方式进行对接</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span4">
+                                    <div class="member" style="margin-bottom:12px">
+                                        <div class="member-photo thumbnail">
+                                            <img src="images/make/15.jpg">
+
+                                        </div>
+
+                                        <div class="member-info">
+                                            <div class="member-role">
+                                                <p class="member-name"><i class="atarasii_maru">15</i>逆流器接口对接</p>
+
+                                            </div>
+
+                                            <div class="member-bio">
+                                                <p>将逆流器接口与EL控制板按如图方式进行对接</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span4">
+                                    <div class="member" style="margin-bottom:12px">
+                                        <div class="member-photo thumbnail">
+                                            <img src="images/make/16.jpg">
+
+                                        </div>
+
+                                        <div class="member-info">
+                                            <div class="member-role">
+                                                <p class="member-name"><i class="atarasii_maru">16</i>控制板链接</p>
+
+                                            </div>
+
+                                            <div class="member-bio">
+                                                <p>链接控制板</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span4">
+                                    <div class="member" style="margin-bottom:12px">
+                                        <div class="member-photo thumbnail">
+                                            <img src="images/make/17.jpg">
+
+                                        </div>
+
+                                        <div class="member-info">
+                                            <div class="member-role">
+                                                <p class="member-name"><i class="atarasii_maru">17</i>EL数字模块测试</p>
+
+                                            </div>
+
+                                            <div class="member-bio">
+                                                <p>根据<a href="#">《EL发光数字》</a>课程内容测试EL数字显示模块</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                           <tr>
+                                <td colspan="3">
+                                    <div class="pricing-table-content">
+                                        <div class="table-row tbg clearfix" style="text-align:center;margin:12px 0;">
+                                            <h4 style="color:#000">第四部分：单车车轮周长测量</h4>
+                                            计算单车车轮的周长
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <div class="clearfix"></div>
+                            <div class="row clearfix">
+                                <div class="span4">
+                                    <div class="member" style="margin-bottom:12px">
+                                        <div class="member-photo thumbnail">
+                                            <img src="images/make/18.jpg">
+
+                                        </div>
+
+                                        <div class="member-info">
+                                            <div class="member-role">
+                                                <p class="member-name"><i class="atarasii_maru">18</i>单车固定</p>
+
+                                            </div>
+
+                                            <div class="member-bio">
+                                                <p>首先我们用单车固定器来将单车后轮固定起来</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span4">
+                                    <div class="member" style="margin-bottom:35px">
+                                        <div class="member-photo thumbnail">
+                                            <img src="images/make/19.jpg">
+
+                                        </div>
+
+                                        <div class="member-info">
+                                            <div class="member-role">
+                                                <p class="member-name"><i class="atarasii_maru">19</i>测量半径</p>
+
+                                            </div>
+
+                                            <div class="member-bio">
+                                                <p>用尺测量单车后轮的半径</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span4">
+                                    <div class="member" style="margin-bottom:12px">
+                                        <div class="member-photo thumbnail">
+                                            <img src="images/make/20.jpg">
+
+                                        </div>
+
+                                        <div class="member-info">
+                                            <div class="member-role">
+                                                <p class="member-name"><i class="atarasii_maru">20</i>周长计算</p>
+
+                                            </div>
+
+                                            <div class="member-bio">
+                                                <p>公式</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <tr>
+                                <td colspan="3">
+                                    <div class="pricing-table-content">
+                                        <div class="table-row tbg clearfix" style="text-align:center;margin:12px 0;">
+                                            <h4 style="color:#000">第五部分：单车行进圈数计量</h4>
+                                            结合霍尔传感器，监测车轮的转动圈数与对应的时间
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <div class="clearfix"></div>
+                            <div class="row clearfix">
+                                <div class="span4">
+                                    <div class="member" style="margin-bottom:12px">
+                                        <div class="member-photo thumbnail">
+                                            <img src="images/make/21.jpg">
+
+                                        </div>
+
+                                        <div class="member-info">
+                                            <div class="member-role">
+                                                <p class="member-name"><i class="atarasii_maru">21</i>磁条吸附</p>
+
+                                            </div>
+
+                                            <div class="member-bio">
+                                                <p>将磁条吸附在后轮内圈骨架上</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span4">
+                                    <div class="member" style="margin-bottom:12px">
+                                        <div class="member-photo thumbnail">
+                                            <img src="images/make/22.jpg">
+
+                                        </div>
+
+                                        <div class="member-info">
+                                            <div class="member-role">
+                                                <p class="member-name"><i class="atarasii_maru">22</i>霍尔传感器固定</p>
+
+                                            </div>
+
+                                            <div class="member-bio">
+                                                <p>将霍尔传感器固定在后轮铁架上</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <tr>
+                                <td colspan="3">
+                                    <div class="pricing-table-content">
+                                        <div class="table-row tbg clearfix" style="text-align:center;margin:12px 0;">
+                                            <h4 style="color:#000">第六部分：车速计算</h4>
+                                            根据已知数据：车轮周长、车辆转动的圈数与对应时间，计算车速信息
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <div class="clearfix"></div>
+                            <div class="row clearfix">
+                                <div class="span4">
+                                    <div class="member" style="margin-bottom:12px">
+                                        <div class="member-photo thumbnail">
+                                            <img src="images/make/23.jpg">
+
+                                        </div>
+
+                                        <div class="member-info">
+                                            <div class="member-role">
+                                                <p class="member-name"><i class="atarasii_maru">23</i>车速计算公式</p>
+
+                                            </div>
+
+                                            <div class="member-bio">
+                                                <p>该课程中搭配霍尔传感器的程序，会实时计算没转一圈花费的时间，用车轮周长除以转动一圈花费的时间即可得到时速信息啦。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span4">
+                                    <div class="member" style="margin-bottom:12px">
+                                        <div class="member-photo thumbnail">
+                                            <img src="images/make/24.jpg">
+
+                                        </div>
+
+                                        <div class="member-info">
+                                            <div class="member-role">
+                                                <p class="member-name"><i class="atarasii_maru">24</i>车速测量模块测试</p>
+
+                                            </div>
+
+                                            <div class="member-bio">
+                                                <p>下面我们来测试一下车速信息情况，请先<a href="#">下载源代码</a>并烧录至Arduino板中。转动自行车后轮，查看数据变化情况。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                             <tr>
+                                <td colspan="3">
+                                    <div class="pricing-table-content">
+                                        <div class="table-row tbg clearfix" style="text-align:center;margin:12px 0;">
+                                            <h4 style="color:#000">第七部分：模块组合</h4>
+                                            万事俱备！下面将EL数字显示模块与车速监测模块进行组合。
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <div class="clearfix"></div>
+                            <div class="row clearfix">
+                                <div class="span4">
+                                    <div class="member" style="margin-bottom:12px">
+                                        <div class="member-photo thumbnail">
+                                            <img src="images/make/25.jpg">
+
+                                        </div>
+
+                                        <div class="member-info">
+                                            <div class="member-role">
+                                                <p class="member-name"><i class="atarasii_maru">25</i>将霍尔传感器套件的IO扩展板与UNO底板分离</p>
+
+                                            </div>
+
+                                            <div class="member-bio">
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span4">
+                                    <div class="member" style="margin-bottom:12px">
+                                        <div class="member-photo thumbnail">
+                                            <img src="images/make/26.jpg">
+
+                                        </div>
+
+                                        <div class="member-info">
+                                            <div class="member-role">
+                                                <p class="member-name"><i class="atarasii_maru">26</i>将霍尔传感器的单排线与IO扩展板数字引脚2相连</p>
+
+                                            </div>
+
+                                            <div class="member-bio">
+                                                <p></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span4">
+                                    <div class="member" style="margin-bottom:12px">
+                                        <div class="member-photo thumbnail">
+                                            <img src="images/make/27.jpg">
+
+                                        </div>
+
+                                        <div class="member-info">
+                                            <div class="member-role">
+                                                <p class="member-name"><i class="atarasii_maru">27</i>将IO扩展板与个位EL控制板相连</p>
+
+                                            </div>
+
+                                            <div class="member-bio">
+                                                <p>用于扩展IO资源/p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span4">
+                                    <div class="member" style="margin-bottom:12px">
+                                        <div class="member-photo thumbnail">
+                                            <img src="images/make/29.jpg">
+
+                                        </div>
+
+                                        <div class="member-info">
+                                            <div class="member-role">
+                                                <p class="member-name"><i class="atarasii_maru">28</i>将IO扩展板与数字控制板相连</p>
+
+                                            </div>
+
+                                            <div class="member-bio">
+                                                <p>使用一跟公母杜邦线，将杜邦线的母头接在IO扩展版的第二个数字口（TX）上，将杜邦线的公头接在十位EL控制板的第一个数字口的（RX）上</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span4">
+                                    <div class="member" style="margin-bottom:12px">
+                                        <div class="member-photo thumbnail">
+                                            <img src="images/make/28.jpg">
+
+                                        </div>
+
+                                        <div class="member-info">
+                                            <div class="member-role">
+                                                <p class="member-name"><i class="atarasii_maru">29</i>电源连接1</p>
+
+                                            </div>
+
+                                            <div class="member-bio">
+                                                <p>使用两跟双公杜邦线，分别接入个位EL控制板的两个5V接口，另外一头分别接入十位EL控制板的第三个与第五个接口</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span4">
+                                    <div class="member" style="margin-bottom:30px">
+                                        <div class="member-photo thumbnail">
+                                            <img src="images/make/30.jpg">
+
+                                        </div>
+
+                                        <div class="member-info">
+                                            <div class="member-role">
+                                                <p class="member-name"><i class="atarasii_maru">30</i>电源连接2</p>
+
+                                            </div>
+
+                                            <div class="member-bio">
+                                                <p>将电池组链接到个位EL控制板的电源接口上</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span4">
+                                    <div class="member" style="margin-bottom:12px">
+                                        <div class="member-photo thumbnail">
+                                            <img src="images/make/31.jpg">
+
+                                        </div>
+
+                                        <div class="member-info">
+                                            <div class="member-role">
+                                                <p class="member-name"><i class="atarasii_maru">31</i>包装</p>
+
+                                            </div>
+
+                                            <div class="member-bio">
+                                                <p>将整体电路收至收纳口袋内，并霍尔传感器连接线固定</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                             
+                             <tr>
+                                <td colspan="3">
+                                    <div class="pricing-table-content">
+                                        <div class="table-row tbg clearfix" style="text-align:center;margin:12px 0;">
+                                            <h4 style="color:#000">第八部分：整体测试</h4>
+                                            踏上你的单车！狂奔吧！
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <div class="clearfix"></div>
+                            <div class="row clearfix">
+                                <div class="span4">
+                                    <div class="member" style="margin-bottom:12px">
+                                        <div class="member-photo thumbnail">
+                                            <img src="images/make/32.jpg">
+
+                                        </div>
+
+                                        <div class="member-info">
+                                            <div class="member-role">
+                                                <p class="member-name"><i class="atarasii_maru">32</i>单车骑行的时速现实效果</p>
+
+                                            </div>
+
+                                            <div class="member-bio">
+                                                <p>记得关灯享受炫酷的效果哦</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="clearfix"></div>
+                        <div>
+                            <ul class="chats clearfix">
+                                <li class="out">
+                                        <img src="../../images/avatar/A05.jpg" class="avatar">
+                                        <div class="message">
+                                            <span class="arrow"></span>
+
+                                            <span class="body">
+                               太棒了！！！成功了！！！	
+									</span>
+                                        </div>
+                                        <div style="clear:both"></div>
+                                </li>
+                                <li class="in">
+                                        <img src="../../images/avatar/B01.jpg" class="avatar">
+                                        <div class="message" id="single_3">
+                                            <span class="arrow"></span>
+
+                                            <span class="body">
+								     点赞！
+									</span>
+                                        </div>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        
+                          
+                </div>
+                      
+<div class="span3 sidebar row fadeRight">
+                                <div class="media">
+                                    <object width="380" height="210">
+                                        <embed wmode="transparent" src="http://player.youku.com/player.php/sid/XMzI2NTc4NTMy/v.swf" width="380" height="210" type="application/x-shockwave-flash">
+                                        </embed>
+                                    </object>
+                                </div>
+                                
+                                <div class="blog-categories-widget widget">
+                                    <h5>课程目录</h5>
+
+                                    <div class="dotted-separator"></div>
+
+                                    <div class="blog-category">
+                                        <i class="icon-angle-right"></i>
+                                        <p>思维拓展：消音的方法</p>
+                                    </div>
+
+                                    <div class="dotted-separator"></div>
+
+                                    <div class="blog-category">
+                                        <i class="icon-angle-right"></i>
+                                        <p>思维元素：自变量因变量提取</p>
+                                    </div>
+
+                                    <div class="dotted-separator"></div>
+
+                                    <div class="blog-category">
+                                        <i class="icon-angle-right"></i>
+                                        <p>方案设计：实验平台的设计</p>
+                                    </div>
+
+                                    <div class="dotted-separator"></div>
+
+                                    <div class="blog-category">
+                                        <i class="icon-angle-right"></i>
+                                        <p>动手制作：实验平台的动手制作</p>
+                                    </div>
+
+                                    <div class="dotted-separator"></div>
+
+                                    <div class="blog-category">
+                                        <i class="icon-angle-right"></i>
+                                        <p>实验：阻隔物形状对消音影响的</p>
+                                        <br>
+                                        <p style="padding-left:20px">对比实验与结论</p>
+                                    </div>
+
+                                    <div class="dotted-separator"></div>
+                                </div>
+
+                                <div class="text-widget widget">
+                                    <h5>怎样选择课程</h5>
+
+                                    <div class="dotted-separator"></div>
+
+                                    <p>
+                                        STEM代表科学（Science），技术（Technology），工程（Engineering），数学（Mathematics）。STEM教育就是科学，技术，工程，数学的教育。在国家实力的比较中，获得STEM学位的人数成为一个重要的指标。美国政府STEM计划是一项鼓励学生主修科学，技术，工程和数学（STEM）领域的计划，并不断加大科学，技术，工程和数学教育的投入，培养学生们的科技理工素养。
+                                    </p>
+
+                                    <div class="dotted-separator"></div>
+                                </div>
+
+                                <div class="tabs-widget widget">
+                                    <h5>课程推荐</h5>
+
+                                    <div class="dotted-separator"></div>
+
+                                    <div class="tabs">
+                                        <ul class="nav nav-pills">
+                                            <li><a href="#tabs-1">你可能感兴趣</a>
+                                            </li>
+                                            <li><a href="#tabs-2">最新发布</a>
+                                            </li>
+                                        </ul>
+
+                                        <div id="tabs-1">
+                                            <div class="media tab-row">
+                                                <a class="pull-left" href="#">
+                                                    <img src="../../images/sidebar-thumbnail.png" alt="tab image" />
+                                                </a>
+
+                                                <div class="media-body">
+                                                    <p class="tab-row-title">课程简介 课程简介课程简介课程简介课程简介课程简介课程简介</p>
+
+                                                    <p class="tab-row-date">2014-2-12</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="media tab-row">
+                                                <a class="pull-left" href="#">
+                                                    <img src="../../images/sidebar-thumbnail.png" alt="tab image" />
+                                                </a>
+
+                                                <div class="media-body">
+                                                    <p class="tab-row-title">课程简介 课程简介课程简介课程简介课程简介课程简介课程简介</p>
+
+                                                    <p class="tab-row-date">2014-2-12</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="media tab-row">
+                                                <a class="pull-left" href="#">
+                                                    <img src="../../images/sidebar-thumbnail.png" alt="tab image" />
+                                                </a>
+
+                                                <div class="media-body">
+                                                    <p class="tab-row-title">课程简介 课程简介课程简介课程简介课程简介课程简介课程简介</p>
+
+                                                    <p class="tab-row-date">2014-2-12</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="media tab-row">
+                                                <a class="pull-left" href="#">
+                                                    <img src="../../images/sidebar-thumbnail.png" alt="tab image" />
+                                                </a>
+
+                                                <div class="media-body">
+                                                    <p class="tab-row-title">课程简介 课程简介课程简介课程简介课程简介课程简介课程简介</p>
+
+                                                    <p class="tab-row-date">2014-2-12</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                           
+                            <div class="topic">课程器材</div>
+                            <div id="shop">
+                                <div class="bill-title">
+                                    本课程有<span>3</span>件宝贝，宝贝总价:
+                                    <span>500</span>元
+                                </div>
+                                <div class="bill-body">
+                                    <table class="table">
+                                        <tbody>
+                                            <tr>
+                                                <td class="photo">
+                                                    <div class="bao">
+                                                        <img src="images/buy/A.png" />
+                                                    </div>
+                                                </td>
+                                                <td class="info">安全衫</td>
+                                                <td class="price">150.00</td>
+                                                <td class="num">1套</td>
+                                                <td class="get">
+                                                    <div class="stylish-button">
+                                                        <a href="#"><i class="icon-shopping-cart icon-large"></i>购买</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="photo">
+                                                    <div class="bao">
+                                                        <img src="images/buy/B.png" />
+                                                    </div>
+                                                </td>
+                                                <td class="info">EL发光电线</td>
+                                                <td class="price">200.00</td>
+                                                <td class="num">1套</td>
+                                                <td class="get">
+                                                    <div class="stylish-button">
+                                                        <a href="#"><i class="icon-shopping-cart icon-large"></i>购买</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="photo">
+                                                    <div class="bao">
+                                                        <img src="images/buy/C.png" />
+                                                    </div>
+                                                </td>
+                                                <td class="info">霍尔模块</td>
+                                                <td class="price">150.00</td>
+                                                <td class="num">1套</td>
+                                                <td class="get">
+                                                    <div class="stylish-button">
+                                                        <a href="#"><i class="icon-shopping-cart icon-large"></i>购买</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr class="title-tr" style="height:auto">
+                                                <td colspan="5">
+                                                    <div class="bill-title" style="width:100%">
+                                                        套件购买总价<span>450</span>元，立省<span>50</span>元
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="photo">
+                                                    <div class="bao">
+                                                        <img src="images/make/01.jpg" />
+                                                    </div>
+                                                </td>
+                                                <td class="info">《发光单车安全衫》实验材料（不含万用表）</td>
+                                                <td class="price">450.00</td>
+                                                <td class="num">1套</td>
+                                                <td class="get">
+                                                    <div class="stylish-button">
+                                                        <a href="#"><i class="icon-shopping-cart icon-large"></i>购买</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                            <h3>相关课程</h3>
+                            <div class="stylish-light-separator" style="margin:0"></div>
+                            <div class="portfolio-wrapper">
+                                <div style="position: relative; overflow: hidden; height: auto;margin-top:16px" class="isotope portfolio row">
+                                    <div class="isotope-item rats dogs monkeys portfolio-image span3">
+                                        <div class="thumbnail">
+                                            <img src="../../images/portfolio-4columns-image8.png" alt="portolfio image">
+                                        </div>
+
+                                        <div class="portfolio-hover">
+                                            <a href="#">
+                                                <div class="portfolio-hover-text">
+                                                    <h3>发光的单车安全衫</h3>
+                                                    <p>发布于：2014-01-28 &nbsp;<i class="icon-pencil"></i>&nbsp;<i class="icon-comments"></i>&nbsp;<i class="icon-heart"></i>
+                                                    </p>
+
+                                                    <h5>每次看到有人能背起行囊，踏上单车，开始一场说走就走的旅行时。心中激荡各种羡慕。不过虽然没能豪迈的踏出远足的脚步，但是慢慢的认识越来越多喜爱单车的同学，也总结了很多大家骑行单车时普遍遇到的问题。 </h5>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="isotope-item rats dogs monkeys portfolio-image span3">
+                                        <div class="thumbnail">
+                                            <img src="../../images/portfolio-4columns-image1.png" alt="portolfio image">
+                                        </div>
+
+                                        <div class="portfolio-hover">
+                                            <a href="#">
+                                                <div class="portfolio-hover-text">
+                                                    <h3>发光的单车安全衫</h3>
+                                                    <p>发布于：2014-01-28 &nbsp;<i class="icon-pencil"></i>&nbsp;<i class="icon-comments"></i>&nbsp;<i class="icon-heart"></i>
+                                                    </p>
+
+                                                    <h5>每次看到有人能背起行囊，踏上单车，开始一场说走就走的旅行时。心中激荡各种羡慕。不过虽然没能豪迈的踏出远足的脚步，但是慢慢的认识越来越多喜爱单车的同学，也总结了很多大家骑行单车时普遍遇到的问题。 </h5>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="isotope-item rats dogs monkeys portfolio-image span3">
+                                        <div class="thumbnail">
+                                            <img src="../../images/portfolio-4columns-image2.png" alt="portolfio image">
+                                        </div>
+
+                                        <div class="portfolio-hover">
+                                            <a href="#">
+                                                <div class="portfolio-hover-text">
+                                                    <h3>发光的单车安全衫</h3>
+                                                    <p>发布于：2014-01-28 &nbsp;<i class="icon-pencil"></i>&nbsp;<i class="icon-comments"></i>&nbsp;<i class="icon-heart"></i>
+                                                    </p>
+
+                                                    <h5>每次看到有人能背起行囊，踏上单车，开始一场说走就走的旅行时。心中激荡各种羡慕。不过虽然没能豪迈的踏出远足的脚步，但是慢慢的认识越来越多喜爱单车的同学，也总结了很多大家骑行单车时普遍遇到的问题。 </h5>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+
+
+                         </div>  <!--是不是多了一个div。。。-->
+ 
+                            
+
+                    </div>
+                </div>
+
+
+
+                <div id="testimonials" class="page-element" style="display:none;">
+                    <div class="container">
+                        <h3>WHAT PEOPLE ARE SAYING</h3>
+                        <p>The layouts adapts to the Screen Size of whatever device visitors are using. Nulla consequat</p>
+
+                        <div id="testimonial-content">
+                            <ul id="hidden-quotes">
+                                <li data-author="Quote&nbsp;Rotator">The animation can be in random or pre-defined in the HTML. Next quote animation will be all in fadeInDown. Optional click to next quote and hover to pause the slideshow.</li>
+                                <li data-author="Mark&nbsp;Twain">You will never be happy if you continue to search for what happiness consists of. You will never live if you are looking for the meaning of life.</li>
+                                <li data-author="Susan&nbsp;Rice">Progress is the product of human agency. Things get better because we make them better. Things go wrong when we get too comfortable, when we fail to take risks or seize opportunities.</li>
+                            </ul>
+
+                            <div class="quote">
+                                <blockquote>
+                                    <p class="quote-content"></p>
+                                </blockquote>
+
+                                <cite class="quote-author"></cite>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div th:replace="fragments/footer :: navigation_footer_fragment"></div>
+
+                <div id="scroll-up-button">
+                    <i class="icon-angle-up"></i>
+                </div>
+
+                <div class="options-panel options-shown">
+
+                    <div class="side-slide" id="story">
+                        <p>故</p>
+                        <p>事</p>
+                    </div>
+                    <div class="side-slide" id="produce">
+                        <p>制</p>
+                        <p>作</p>
+                    </div>
+                    <div class="side-slide" id="mine">
+                        <p>我</p>
+                        <p>的</p>
+                    </div>
+                    <div class="side-slide" id="heart">
+                        <i class="icon-heart"></i>
+                    </div>
+                    <div class="side-slide" id="gift">
+                        <i class="icon-gift"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div th:replace="fragments/courses/courseMakeFooter"></div>
+</body>
+
+</html>
